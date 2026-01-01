@@ -59,11 +59,7 @@ E --> F[Streamlit UI Display]
 
 
 
-🧑‍💻 Installation & Local Run 
-
-=======
-🧑‍💻 Installation & Local Run
-. 280d95ace4a471c3e50238b7a9cd3b620863ed78
+Installation & Local Run 
 1️⃣ Clone Repo
 git clone https://github.com/Pandapuneeth/retinal_disease_detector.git
 cd retinal_disease_detector
