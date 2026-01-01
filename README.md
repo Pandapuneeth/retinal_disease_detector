@@ -1,119 +1,74 @@
-<h1 align="center">🧠 Retinal OCT Disease Classification – 8-Class Medical AI (C8 Dataset)</h1>
+# Retinal OCT Disease Classification (8 Classes)
 
-A deep-learning powered medical imaging system that classifies **8 retinal diseases** using Optical Coherence Tomography (OCT) scans — featuring a clean **Streamlit GUI**, **MobileNetV2 transfer-learning**, and **Grad-CAM visual explainability**.
-
----
-
-## 🩺 Supported Retinal Conditions (8-Class C8 Dataset)
-
-| Index | Disease | Full Name |
-|-------|---------|------------|
-| 1️⃣ | AMD | Age-related Macular Degeneration |
-| 2️⃣ | CNV | Choroidal Neovascularization |
-| 3️⃣ | CSR | Central Serous Retinopathy |
-| 4️⃣ | DME | Diabetic Macular Edema |
-| 5️⃣ | DR | Diabetic Retinopathy |
-| 6️⃣ | DRUSEN | Drusen Deposits |
-| 7️⃣ | MH | Macular Hole |
-| 8️⃣ | NORMAL | Healthy Retina |
-
-📦 **Dataset Source (Kaggle)**  
-🔗 https://www.kaggle.com/datasets/obulisainaren/retinal-oct-c8
+Deep learning model that classifies 8 retinal diseases using Optical Coherence Tomography (OCT) scans.  
+Includes a Streamlit web app UI, MobileNetV2 transfer learning, and Grad-CAM visualization.
 
 ---
 
-## 🚀 Tech Stack
-
-| Component | Technology |
-|----------|-------------|
-| CNN Backbone | MobileNetV2 *(EfficientNetB0 optional)* |
-| Framework | PyTorch |
-| GUI | Streamlit |
-| Explainability | Grad-CAM |
-| Deployment | Local |
-| Training Hardware | CUDA GPU |
-
----
-
-## 🏗️ Features
-
-✔ Transfer Learning (MobileNetV2)  
-✔ Supports high-resolution OCT scans  
-✔ Streamlit UI — upload & classify  
-✔ Shows prediction + probability score  
-✔ Grad-CAM heatmap highlight region  
-✔ Modular training pipeline (`train.py`)  
+## Supported Classes
+- AMD – Age-related Macular Degeneration
+- CNV – Choroidal Neovascularization
+- CSR – Central Serous Retinopathy
+- DME – Diabetic Macular Edema
+- DR – Diabetic Retinopathy
+- DRUSEN
+- MH – Macular Hole
+- NORMAL – Healthy Retina
 
 ---
 
-## 🧬 Model Pipeline
+## Dataset
+Kaggle dataset:
+https://www.kaggle.com/datasets/obulisainaren/retinal-oct-c8
 
-```mermaid
-flowchart LR
-A[OCT Image Upload] --> B[Preprocessing & Resize 224x224]
-B --> C[MobileNetV2 Forward Pass]
-C --> D[Softmax Classification – 8 Classes]
-D --> E[Grad-CAM Heatmap Overlay]
-E --> F[Streamlit UI Display]
+---
 
+## Tech Stack
+- Framework: PyTorch
+- Model: MobileNetV2 (transfer learning)
+- Interface: Streamlit
+- Explainability: Grad-CAM heatmaps
+- Training script: train.py
+- App: app/app.py
 
-<<<<<<< HEAD
+---
 
-🧑‍💻 Installation & Local Run 
+## Features
+- Trainable PyTorch model
+- Upload image → classify disease
+- Shows probability score
+- Grad-CAM heatmap highlight
+- Organized modular project structure
 
-=======
-🧑‍💻 Installation & Local Run
->>>>>>> 280d95ace4a471c3e50238b7a9cd3b620863ed78
-1️⃣ Clone Repo
+---
+
+## How To Run (Local)
+
+### Clone repository
 git clone https://github.com/Pandapuneeth/retinal_disease_detector.git
 cd retinal_disease_detector
+Create environment and install dependencies
 
-2️⃣ Create Environment
 conda create -n retina python=3.10
 conda activate retina
 pip install -r requirements.txt
+Run the Streamlit app
 
-<<<<<<< HEAD
-3️⃣ Launch Streamlit App
 streamlit run app/app.py
+Training (Optional)
+To retrain the model:
 
-🏋️‍♂️ Training (if you want to retrain)
+
 python train.py
-➡ Output model will be saved under /models
+Model (.pth) gets saved in /models.
 
-🤝 Contributing
+Contributing
+Pull requests and improvements are welcome.
 
-Contributions are welcome — fork the repo, improve, and submit PRs (UI upgrades / deployment / Grad-CAM viewer).
-=======
-3️⃣ Run Streamlit App
-streamlit run app/app.py
+License
+MIT License
 
-🤝 Contributing
-
-Feel free to fork, improve, and submit PRs — especially UI / deployment upgrades.
->>>>>>> 280d95ace4a471c3e50238b7a9cd3b620863ed78
-
-🧾 License
-
-MIT License — free for academic & commercial use.
-
-🌟 Show Some Love
-
-<<<<<<< HEAD
-If this helped you — ⭐ star the repo & share it!
-=======
-If this project helped you — ⭐ star the repo!
->>>>>>> 280d95ace4a471c3e50238b7a9cd3b620863ed78
-
-💬 Author
-
-👤 Puneeth B J
-AI/ML Engineer — Computer Vision • Medical AI • Cybersecurity
-<<<<<<< HEAD
-🔗 LinkedIn — https://www.linkedin.com/in/puneeth-b-j-037bba252
-
-🔗 GitHub — https://github.com/Pandapuneeth
-=======
-🔗 LinkedIn: www.linkedin.com/in/puneeth-b-j-037bba252
-🔗 GitHub: Pandapuneeth
->>>>>>> 280d95ace4a471c3e50238b7a9cd3b620863ed78
+Author
+Puneeth B J
+LinkedIn: https://www.linkedin.com/in/puneeth-b-j-037bba252
+GitHub: https://github.com/Pandapuneeth
