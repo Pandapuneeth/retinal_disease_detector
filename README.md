@@ -57,13 +57,13 @@ D --> E[Grad-CAM Heatmap Overlay]
 E --> F[Streamlit UI Display]
 
 
-<<<<<<< HEAD
+
 
 🧑‍💻 Installation & Local Run 
 
 =======
 🧑‍💻 Installation & Local Run
->>>>>>> 280d95ace4a471c3e50238b7a9cd3b620863ed78
+. 280d95ace4a471c3e50238b7a9cd3b620863ed78
 1️⃣ Clone Repo
 git clone https://github.com/Pandapuneeth/retinal_disease_detector.git
 cd retinal_disease_detector
@@ -73,7 +73,7 @@ conda create -n retina python=3.10
 conda activate retina
 pip install -r requirements.txt
 
-<<<<<<< HEAD
+.
 3️⃣ Launch Streamlit App
 streamlit run app/app.py
 
@@ -91,7 +91,7 @@ streamlit run app/app.py
 🤝 Contributing
 
 Feel free to fork, improve, and submit PRs — especially UI / deployment upgrades.
->>>>>>> 280d95ace4a471c3e50238b7a9cd3b620863ed78
+. 280d95ace4a471c3e50238b7a9cd3b620863ed78
 
 🧾 License
 
@@ -99,21 +99,21 @@ MIT License — free for academic & commercial use.
 
 🌟 Show Some Love
 
-<<<<<<< HEAD
+.
 If this helped you — ⭐ star the repo & share it!
 =======
 If this project helped you — ⭐ star the repo!
->>>>>>> 280d95ace4a471c3e50238b7a9cd3b620863ed78
+. 280d95ace4a471c3e50238b7a9cd3b620863ed78
 
 💬 Author
 
 👤 Puneeth B J
 AI/ML Engineer — Computer Vision • Medical AI • Cybersecurity
-<<<<<<< HEAD
+.
 🔗 LinkedIn — https://www.linkedin.com/in/puneeth-b-j-037bba252
 
 🔗 GitHub — https://github.com/Pandapuneeth
 =======
 🔗 LinkedIn: www.linkedin.com/in/puneeth-b-j-037bba252
 🔗 GitHub: Pandapuneeth
->>>>>>> 280d95ace4a471c3e50238b7a9cd3b620863ed78
+. 280d95ace4a471c3e50238b7a9cd3b620863ed78
