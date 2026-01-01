@@ -1,5 +1,5 @@
 🧠 Retinal OCT Disease Classification – 8-Class Medical AI (C8 Dataset)
-<p align="center"> <img src="https://raw.githubusercontent.com/Pandapuneeth/retinal_disease_detector/master/assets/banner.png" width="85%"> </p>
+
 
 A deep-learning powered medical imaging system that classifies 8 retinal diseases using Optical Coherence Tomography (OCT) scans — with a clean Streamlit GUI, MobileNetV2 transfer-learning, and Grad-CAM heatmaps for explainability.
 
